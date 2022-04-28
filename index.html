@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Предоставляемые услуги</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style1.css" id="style1" type="text/css" >
+</head>
+
+<body>
+    <!-- Making a page header. Making a nav-menu. Point 5 -->
+
+    <header class="page-header">
+        <div class="wide-container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html" class="nav-link">DISTYLE</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Об авторе</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Предоставляемые услуги</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Making a semantic web with RDFa and tag HTML5 -->
+    <main>
+        <section  class="promo" vocab = "http://schema.org/" typeof = "product">
+            <div class="container">
+                <div class="promo-text">
+                    <h1 class="main-heading" property = "description">Поможем сделать
+                        вашу квартиру
+                        уютнее</h1>
+                    <p class="promo-description" property="description">Подбираем текстиль, мебель и аксессуары
+                        под&nbsp;ваш&nbsp;интерьер, находим магазины
+                        <br>и помогаем организовать доставку
+                    </p>
+                </div>
+            </div>
+        </section>    
+<!-- Making a table with information about services -->
+<!-- Making a semantic web with RDFa and tag HTML5 -->
+        <div class="table-container" vocab = "http://schema.org/" typeof = "product">
+            <button id="theme-button">Смена <br>
+                 стиля таблицы</button>
+        <table  align="center"  border="5px" cellpadding="20px" cellspacing="2" >
+            <tr align="center">
+               <td property = "description">УСЛУГИ</td>
+               <td property = "description">СТОИМОСТЬ</td>
+            </tr>
+            <tr property = "description">
+               <td>Дизайн-проект на бумаге</td>
+               <td>От 2000 рублей</td>
+            </tr>
+            <tr property = "description">
+                <td>Дизайн-проект в 3D-визуализации</td>
+                <td>От 4200 рублей</td>
+             </tr>
+             <tr property = "description">
+                <td>Расчеты стоимости дизайн-проекта в текущих ценах</td>
+                <td>От 6000 рублей</td>
+             </tr>
+             <tr property = "description">
+                <td>Инженерное сопровождение</td>
+                <td>От 2500 рублей</td>
+             </tr>
+         </table>
+        </div>
+      
+    </main>
+    <!-- Making a page footer -->
+    <footer class="page-footer">
+        <!-- Making a semantic web with microdata and tag HTML5 -->
+        <div class="wide-container" itemscope itemtype="https://schema.org/CreativeWork">
+            <p itemprop="dateCreated">14.10.2021</p>
+            <p itemprop="author" class="author"class="author">Шпанькова Д.А.</p>
+            <p>Version 1.0.0</p>
+        </div>
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

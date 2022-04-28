@@ -1,0 +1,130 @@
+    // compress: false
+
+@import "vars1";
+
+body {
+    min-width: 1200px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: normal;
+    color: @fontcolor;
+    background-color: #e5e5e5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: @fontcolor;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten(@fontcolor, 50%);
+    }
+
+    &:focus {
+        color: darken(@fontcolor, 70%);
+    }
+}
+
+ 
+.container {
+    margin: 0 auto;
+    width: 1036px;
+}
+
+.wide-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+// mix-in
+.buttoncolor(@_color, @_color1) {
+    border: 2px solid @_color;
+    background-color: @_color1;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 26px 69px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    .buttoncolor(@buttoncolor, @buttoncolor);
+    transition: background-color .1s linear;
+
+    &:hover {
+        color: @buttoncolor;
+        .buttoncolor(#fff, #fff);
+    }
+
+    &:focus {
+        color: #99544f;
+        .buttoncolor(@buttoncolor, #fff);
+    }
+}
+
+
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+@media (max-width: 1024px) {
+    .half-wrap {
+        display: block;
+    }
+    .about-img {
+        margin-bottom: 20px;
+    }
+    .section-heading {
+    text-align: left;
+    }
+    .news-list {
+        display: block;
+    }
+    .works {
+        display: none;
+    }
+    .container .description {
+        display: block;
+    }
+    .team-text {
+        margin: 20px 20px;
+    }
+    .team-img {
+    float: none;
+    }
+    table {
+        width: 100px;
+    }
+    
+    
+}
+
+
+
+//Blocks
+@import "blocks1/header";
+@import "blocks1/promo";
+@import "blocks1/about_us";
+@import "blocks1/form";
+@import "blocks1/me";
+@import "blocks1/table1";
+@import "blocks1/works";
+@import "blocks1/news";
+@import "blocks1/footer";
+
+
+
+

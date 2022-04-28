@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Об авторе</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet/less" type="text/css" href="./css/style1.less" />
+    <script src="./less.js-master/dist/less.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Making a page header. Making a nav-menu. Point 5 -->
+
+    <header class="page-header">
+        <div class="wide-container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html" class="nav-link">DISTYLE</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Об авторе</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Предоставляемые услуги</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<!-- Making a semantic web with RDFaand tag HTML5 -->
+        <section  class="promo" vocab = "http://schema.org/" typeof = "product">
+            <div class="container">
+                <div class="promo-text">
+                    <h1 class="main-heading" property = "description">Поможем сделать
+                        вашу квартиру
+                        уютнее</h1>
+                    <p class="promo-description" property="description">Подбираем текстиль, мебель и аксессуары
+                        под&nbsp;ваш&nbsp;интерьер, находим магазины
+                        <br>и помогаем организовать доставку
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<!-- Information about the author -->
+
+<!-- Making a semantic web with RDFa and tag HTML5 -->
+        <section class="team" id="team" vocab = "http://schema.org/" typeof = "Person" >
+            <div class="container">
+                <h2 class="section-heading" property = "name">Об  авторе</h2>
+                <div class="description">
+                        <img property="image" src="img/author.jpg" alt="Девушка" class="team-img" width="320" height="253">
+                        <p property="description" class="team-text">Меня зовут Дарина. Я являюсь создателем данного лендинга. <br>
+                            Я учусь на 3 курсе
+                            Гомельского государственного технического <br> университета имени П.О.Сухого на гуманитарно-экономическом <br>
+                            факультете по специальности инженер-экономист.</p>
+                        </div>
+            </div>
+        </section>
+        <!-- Making a contact form with the author -->
+<!-- Making a semantic web with RDFa and tag HTML5 -->
+        <section class="form" id="form" vocab = "http://schema.org/" typeof = "ContactPage">
+            <div class="wide-container">
+                <div class="form-wrap">
+                    <h2 class="section-heading">Оставить заявку</h2>
+                    <p class="form-text" property="description">Оставьте свои контакты. Менеджер перезвонит
+                        в удобное вам время и ответит на все вопросы.</p>
+                    <form action="#" method="post" class="form-action">
+                        <p>
+                            <input type="text" class="text-input" id="name" name="name" required>
+                            <label for="name" class="input-label">Ваше имя</label>
+                        </p>
+                        <p>
+                            <input type="tel" class="text-input" id="phone" name="phone" required>
+                            <label for="phone" class="input-label">Введите телефон</label>
+                        </p>
+                        <button class="submit-button button" type="submit">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Making a page footer -->
+    <footer class="page-footer">
+        <!-- Making a semantic web with microdata and tag HTML5. -->
+        <div class="wide-container" itemscope itemtype="https://schema.org/CreativeWork">
+            <p itemprop="dateCreated">14.10.2021</p>
+            <p itemprop="author" class="author"class="author">Шпанькова Д.А.</p>
+            <p>Version 1.0.0</p>
+        </div>
+    </footer>
+</body>
+</html>

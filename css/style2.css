@@ -1,0 +1,361 @@
+body {
+  min-width: 1200px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: normal;
+  color: #533738;
+  background-color: #e5e5e5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #533738;
+  text-decoration: none;
+}
+a:hover {
+  color: #d0b9b9;
+}
+a:focus {
+  color: #000000;
+}
+.container {
+  margin: 0 auto;
+  width: 1036px;
+}
+.wide-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 26px 69px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border: 2px solid #cc8b86;
+  background-color: #cc8b86;
+  transition: background-color 0.1s linear;
+}
+.button:hover {
+  color: #cc8b86;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+.button:focus {
+  color: #99544f;
+  border: 2px solid #cc8b86;
+  background-color: #fff;
+}
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+}
+@media (max-width: 1024px) {
+  .half-wrap {
+    display: block;
+  }
+  .about-img {
+    margin-bottom: 20px;
+  }
+  .section-heading {
+    text-align: left;
+  }
+  .news-list {
+    display: block;
+  }
+  .works {
+    display: none;
+  }
+  .container .description {
+    display: block;
+  }
+  .team-text {
+    margin: 20px 20px;
+  }
+  .team-img {
+    float: none;
+  }
+  table {
+    width: 100px;
+  }
+}
+.page-header .wide-container {
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 35%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav-list {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 42px;
+  padding: 0;
+  list-style: none;
+}
+.nav-item {
+  margin-right: 23px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-link {
+  font-size: 19px;
+  line-height: 24px;
+}
+.promo {
+  padding-top: 150px;
+  padding-bottom: 166px;
+  background-color: #ded7cb;
+  background-image: url("../img/promo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promo-text {
+  width: 46%;
+}
+.main-heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+}
+.promo-description {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+.about {
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+.half-wrap {
+  display: flex;
+}
+.about-img {
+  align-self: flex-start;
+  margin-right: 64px;
+}
+.text-wrap {
+  width: 50%;
+}
+.text-wrap p {
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.form {
+  background-color: #8d7370;
+  color: white;
+}
+.form .wide-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-wrap {
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 82px;
+}
+.form-wrap .section-heading {
+  margin-bottom: 24px;
+  text-align: left;
+}
+.form-text {
+  margin-bottom: 34px;
+}
+.form-action p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.text-input {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.text-input:focus + .input-label,
+.text-input:valid:not(:placeholder-shown) + .input-label {
+  bottom: 40px;
+  transition: 0.2s ease-in;
+}
+.input-label {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  transition: 0.2s ease-in;
+}
+.submit-button {
+  margin-top: 7px;
+}
+.container .description {
+  display: flex;
+}
+.team {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: #eeeeee;
+}
+.team-img {
+  float: left;
+  margin-bottom: 10px;
+}
+.team-text {
+  margin: 130px 40px;
+}
+.table-container {
+  padding: 40px;
+}
+table {
+  background-color: rgba(177, 128, 122, 0.8);
+  border: 10px;
+  border-color: #fff;
+  color: #fff;
+}
+/* Styles for theme-button */
+#theme-button {
+  background-color: rgba(100, 72, 69, 0.8);
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.works {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.works .section-heading {
+  text-align: left;
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: 5fr 2fr 5fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.works-item {
+  position: relative;
+}
+.works-item:nth-child(4n + 2) {
+  grid-column: 2 / -1;
+}
+.works-item:nth-child(4n + 3) {
+  grid-column: 1 / 3;
+}
+.works-item:nth-child(4n + 4) {
+  grid-column: 3 / -1;
+}
+.works-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.works-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
+  padding-top: 86px;
+  padding-right: 35px;
+  padding-left: 35px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(100, 72, 69, 0.8);
+}
+.works-item:hover .works-hover {
+  z-index: 2;
+}
+.works-heading {
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 15px;
+  max-width: 270px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+.works-text {
+  display: -webkit-box;
+  overflow-y: hidden;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.more {
+  display: block;
+  margin-top: 37px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+.more svg {
+  margin-left: 10px;
+}
+.more:hover path {
+  fill: #cc8b86;
+}
+.more:focus path {
+  fill: #99544f;
+}
+.news {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: #979492;
+}
+.news-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  list-style: none;
+}
+.news-item {
+  margin-bottom: 20px;
+  width: 31%;
+}
+.news-img {
+  display: block;
+  margin-bottom: 10px;
+}
+.news-text {
+  margin: 0;
+}
+.page-footer .wide-container {
+  display: flex;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+.author {
+  margin-top: 0;
+  margin-right: 22px;
+  margin-bottom: 0;
+  margin-left: 22px;
+}

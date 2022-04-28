@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- Making RDF description. Point 9 -->
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:cd="http://http://127.0.0.1:5500/index.html/cd#">
+
+<rdf:Description
+rdf:about="http://http://127.0.0.1:5500/index.html/cd/Design project on paper">
+  <cd:author>Шпанькова Д.А.</cd:author>
+  <cd:company>DISTYLE</cd:company>
+  <cd:price>2000 blr</cd:price>
+  <cd:date>14.10.2021</cd:date>
+</rdf:Description>
+
+<rdf:Description
+rdf:about="http://http://127.0.0.1:5500/index.html/cd/Design project in 3D visualization">
+  <cd:author>Шпанькова Д.А.</cd:author>
+  <cd:company>DISTYLE</cd:company>
+  <cd:price>4200 blr</cd:price>
+  <cd:date>14.10.2021</cd:date>
+</rdf:Description>
+
+<rdf:Description
+rdf:about="http://http://127.0.0.1:5500/index.html/cd/Calculations price of design project in current prices">
+  <cd:author>Шпанькова Д.А.</cd:author>
+  <cd:company>DISTYLE</cd:company>
+  <cd:price>6000 blr</cd:price>
+  <cd:date>14.10.2021</cd:date>
+</rdf:Description>
+
+<rdf:Description
+rdf:about="http://http://127.0.0.1:5500/index.html/cd/Engineering support">
+  <cd:author>Шпанькова Д.А.</cd:author>
+  <cd:company>DISTYLE</cd:company>
+  <cd:price>2500 blr</cd:price>
+  <cd:date>14.10.2021</cd:date>
+</rdf:Description>
+
+
+</rdf:RDF>

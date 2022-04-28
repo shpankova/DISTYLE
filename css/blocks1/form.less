@@ -1,0 +1,61 @@
+// main: ../style1.less
+
+.form {
+    background-color: #8d7370;
+    color: white;
+}
+
+.form .wide-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-wrap {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 82px;
+}
+
+.form-wrap .section-heading {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.form-text {
+    margin-bottom: 34px;
+}
+
+.form-action p {
+    position: relative;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.text-input {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.text-input:focus + .input-label,
+.text-input:valid:not(:placeholder-shown) + .input-label {
+    bottom: 40px;
+    transition: 0.2s ease-in;
+}
+
+.input-label {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    transition: 0.2s ease-in;
+}
+
+.submit-button {
+    margin-top: 7px;
+}

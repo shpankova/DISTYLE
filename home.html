@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DISTYLE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <!-- using less.js -->
+    <link rel="stylesheet/less" type="text/css" href="./css/style1.less" />
+    <script src="./less.js-master/dist/less.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Making a page header. Making a nav-menu. Point 5 -->
+
+    <header class="page-header">
+        <div class="wide-container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html" class="nav-link">DISTYLE</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Об авторе</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Предоставляемые услуги</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+                <!-- Making a semantic web with microdata and tag HTML5 -->
+                <section class="promo" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="container">
+                        <div class="promo-text">
+                            <h1 itemprop="description" class="main-heading">Поможем сделать
+                                вашу квартиру
+                                уютнее</h1>
+                            <p itemprop="description" class="promo-description">Подбираем текстиль, мебель и аксессуары
+                                под&nbsp;ваш&nbsp;интерьер, находим магазины
+                                <br>и помогаем организовать доставку
+                            </p>
+                        </div>
+                    </div>
+                </section>
+        
+        <!-- Making a semantic web with microdata and tag HTML5 -->
+        <section class="about" id="about" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="container">
+                <h2 class="section-heading">О нас</h2>
+                <div class="half-wrap">
+                    <img itemprop="image" src="img/about.jpg" alt="Белая ваза с сухоцветами на обеденном столе, по бокам от которой стоят прозрачные бокалы" class="about-img" width="445" height="465">
+                    <div class="text-wrap">
+                        <p itemprop="description">Премиальный европейский текстиль — <br>
+                            одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — <br>
+                            вот то, что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+                        <p itemprop="description">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+                            « Да! Это именно то, что действительно достойно моего дома!»</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Making news-block. Point 6 -->
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="section-heading">Новости</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <img src="img/1.jpg"  class="news-img" width="320" height="253">
+                        <a href="https://www.interior.ru/design/8503-trendi-2020-2021-8-tendentsii-i-40-novinok-vistavki-imm-cologne.html" class="news-text">
+                        Тренды 2020/2021</a>
+                    </li>
+                    <li class="news-item">
+                        <img src="img/2.jpg"  class="news-img" width="320" height="253">
+                        <a href="https://geometrium.com/category/novosti/" class="news-text">
+                        Новости мира дизайна интерьров</a>
+                        </li>
+                    <li class="news-item">
+                        <img src="img/3.jpg" class="news-img" width="320" height="253">
+                        <a href="https://www.housebeautiful.com/home-remodeling/interior-designers/tips/g864/decorating-secrets/" class="news-text">
+                            65 Designers Share the Decorating Secrets</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Making a semantic web with microdata and tag HTML5 -->
+        <section class="works" id="works" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="wide-container">
+                <h2 class="section-heading">Наши работы</h2>
+                <div class="works-grid">
+                    <article class="works-item">
+                        <img itemprop="image" src="img/portfolio-1.jpg" alt="Интерьер с двухспальной кроватью и ширмой " class="works-img" width="488" height="451">
+                        <div class="works-hover">
+                            <h3 itemprop="name" class="works-heading">Квартира-студия
+                                30 кв.м.</h3>
+                            <p itemprop="description" class="works-text">В квартире используются светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </div>
+                    </article>
+                    <article class="works-item">
+                        <img itemprop="image" src="img/portfolio-2.jpg" alt="Интерьер кухни с белой барной стойкой у которой стоят четыре деревянных табурета" class="works-img" width="692" height="451">
+                        <div class="works-hover">
+                            <h3 itemprop="name" class="works-heading">Двухэтажная квартира
+                                100 кв.м.</h3>
+                            <p itemprop="description" class="works-text">В интерьере квартиры мы сконцентрировали внимание на использовании светлых оттенков и природных мативов.</p>
+                        </div>
+                    </article>
+                    <article class="works-item">
+                        <img itemprop="image" src="img/portfolio-3.jpg" alt="Интерьер гостинной с светло-зелёным диваном и белым кофейным столиком" class="works-img" width="692" height="451">
+                        <div class="works-hover">
+                            <h3 itemprop="name" class="works-heading">Квартира-студия
+                                30 кв.м.</h3>
+                            <p itemprop="description" class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </div>
+                    </article>
+                    <article class="works-item">
+                        <img itemprop="image" src="img/portfolio-4.jpg" alt="Интерьер ванной комнаты со стерыми стенами, пальмой и большой белой ванной в центре" class="works-img" width="488" height="451">
+                        <div class="works-hover">
+                            <h3 itemprop="name" class="works-heading">Квартира-студия
+                                30 кв.м.</h3>
+                            <p itemprop="description" class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов БалиВ квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов БалиВ квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- Making a page footer -->
+    <footer class="page-footer">
+        <!-- Making a semantic web with microdata and tag HTML5 -->
+        <div class="wide-container" itemscope itemtype="https://schema.org/CreativeWork">
+            <p itemprop="dateCreated">14.10.2021</p>
+            <p itemprop="author" class="author">Шпанькова Д.А.</p>
+            <p>Version 1.0.0</p>
+        </div>
+    </footer>
+</body>
+
+</html>
